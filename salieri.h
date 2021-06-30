@@ -1608,4 +1608,12 @@
 
 #define SALIERI_VERSION 1
 
+#ifndef __analysis_assume // [
+#define __analysis_assume(expr)
+#endif // ]
+
+#ifndef _Analysis_assume_ // [
+#define _Analysis_assume_(expr)
+#endif // ]
+
 #endif /* !defined(SALIERI_VERSION) || (SALIERI_VERSION < X) */
